@@ -106,14 +106,10 @@ O fluxograma abaixo descreve a lógica da operação de inserção (`adiciona`).
 flowchart TD
     A[Início] --> B{Tamanho < Capacidade?}
     B -- Não --> C[Retorna falso]
-    B -- Sim --> D[Atribui elemento em elementos[tamanho]]
+    B -- Sim --> D[Atribui elemento em elementos&lbrack;tamanho&rbrack;]
     D --> E[Incrementa tamanho]
     E --> F[Retorna verdadeiro]
 ```
-
-### Exemplos de Uso
-
-Os exemplos de utilização estão localizados em [`src/main/java/com/lucas/estruturadados/testes/Aula03.java`](../src/main/java/com/lucas/estruturadados/testes/Aula03.java) e [`Aula04.java`](../src/main/java/com/lucas/estruturadados/testes/Aula04.java), onde é possível observar a tentativa de inserir além da capacidade e a impressão do vetor. 【F:src/main/java/com/lucas/estruturadados/testes/Aula03.java†L1-L13】【F:src/main/java/com/lucas/estruturadados/testes/Aula04.java†L1-L17】
 
 ## Lista Encadeada Simples
 
@@ -328,11 +324,11 @@ public void enfileirar(T elemento) {
 flowchart TD
     A[Início] --> B{Tamanho == capacidade?}
     B -- Sim --> C[Realoca vetor]
-    B -- Não --> D[Escreve em elementos[fim]]
+    B -- Não --> D[Escreve no índice fim]
     C --> D
-    D --> E[Fim = (fim + 1) mod n]
-    E --> F[Tamanho++]
-    F --> G[Fim]
+    D --> E[Atualiza fim: fim mais 1, módulo n]
+    E --> F[Incrementa tamanho]
+    F --> G[Retorna fim]
 ```
 
 ## Heap Binário / Fila de Prioridade
@@ -437,7 +433,7 @@ flowchart TD
     D -- Sim --> E[Chama inserir para filho esquerdo]
     D -- Não --> F{Elemento > valor do nó?}
     F -- Sim --> G[Chama inserir para filho direito]
-    F -- Não --> H[Não altera (valor já existe)]
+    F -- Não --> H[Não altera pois valor já existe]
     C --> I[Retorna nó]
     E --> I
     G --> I
