@@ -1,6 +1,6 @@
-package com.loiane.estruturadados.testes;
+package com.lucas.estruturadados.testes;
 
-import com.loiane.estruturadados.vetor.Vetor;
+import com.lucas.estruturadados.vetor.Vetor;
 
 public class Aula03 {
     public static void main(String[] args) {
