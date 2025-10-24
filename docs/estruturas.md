@@ -111,10 +111,6 @@ flowchart TD
     E --> F[Retorna verdadeiro]
 ```
 
-### Exemplos de Uso
-
-Os exemplos de utilização estão localizados em [`src/main/java/com/lucas/estruturadados/testes/Aula03.java`](../src/main/java/com/lucas/estruturadados/testes/Aula03.java) e [`Aula04.java`](../src/main/java/com/lucas/estruturadados/testes/Aula04.java), onde é possível observar a tentativa de inserir além da capacidade e a impressão do vetor. 【F:src/main/java/com/lucas/estruturadados/testes/Aula03.java†L1-L13】【F:src/main/java/com/lucas/estruturadados/testes/Aula04.java†L1-L17】
-
 ## Lista Encadeada Simples
 
 ### Conceito e Características
