@@ -19,7 +19,7 @@ Um vetor é uma coleção ordenada de elementos armazenados em posições contí
 3. **Obter tamanho lógico**: retorna quantos elementos foram efetivamente adicionados.
 4. **Representação textual**: monta uma string com os elementos já armazenados.
 
-Essas operações estão implementadas em [`src/main/java/com/loiane/estruturadados/vetor/Vetor.java`](../src/main/java/com/loiane/estruturadados/vetor/Vetor.java). 【F:src/main/java/com/loiane/estruturadados/vetor/Vetor.java†L1-L56】
+Essas operações estão implementadas em [`src/main/java/com/lucas/estruturadados/vetor/Vetor.java`](../src/main/java/com/lucas/estruturadados/vetor/Vetor.java). 【F:src/main/java/com/lucas/estruturadados/vetor/Vetor.java†L1-L56】
 
 ### Pseudocódigo
 
@@ -57,7 +57,7 @@ função paraString(vetor)
 ### Implementação em Java
 
 ```java
-package com.loiane.estruturadados.vetor;
+package com.lucas.estruturadados.vetor;
 
 public class Vetor {
     private String[] elementos;
@@ -113,13 +113,13 @@ flowchart TD
 
 ### Exemplos de Uso
 
-Os exemplos de utilização estão localizados em [`src/main/java/com/loiane/estruturadados/testes/Aula03.java`](../src/main/java/com/loiane/estruturadados/testes/Aula03.java) e [`Aula04.java`](../src/main/java/com/loiane/estruturadados/testes/Aula04.java), onde é possível observar a tentativa de inserir além da capacidade e a impressão do vetor. 【F:src/main/java/com/loiane/estruturadados/testes/Aula03.java†L1-L13】【F:src/main/java/com/loiane/estruturadados/testes/Aula04.java†L1-L17】
+Os exemplos de utilização estão localizados em [`src/main/java/com/lucas/estruturadados/testes/Aula03.java`](../src/main/java/com/lucas/estruturadados/testes/Aula03.java) e [`Aula04.java`](../src/main/java/com/lucas/estruturadados/testes/Aula04.java), onde é possível observar a tentativa de inserir além da capacidade e a impressão do vetor. 【F:src/main/java/com/lucas/estruturadados/testes/Aula03.java†L1-L13】【F:src/main/java/com/lucas/estruturadados/testes/Aula04.java†L1-L17】
 
 ## Lista Encadeada Simples
 
 ### Conceito e Características
 
-Uma lista simplesmente encadeada é formada por nós que armazenam um valor e a referência para o próximo nó. Permite inserções e remoções eficientes nas extremidades sem necessidade de deslocar elementos. A implementação usa ponteiros explícitos (`cabeca` e `cauda`) para otimizar inserções no final.【F:src/main/java/com/loiane/estruturadados/lista/encadeada/ListaEncadeada.java†L1-L108】
+Uma lista simplesmente encadeada é formada por nós que armazenam um valor e a referência para o próximo nó. Permite inserções e remoções eficientes nas extremidades sem necessidade de deslocar elementos. A implementação usa ponteiros explícitos (`cabeca` e `cauda`) para otimizar inserções no final.【F:src/main/java/com/lucas/estruturadados/lista/encadeada/ListaEncadeada.java†L1-L108】
 
 ### Operações Disponíveis
 
@@ -186,7 +186,7 @@ flowchart TD
 
 ### Conceito e Características
 
-Listas duplamente encadeadas mantêm referências tanto para o próximo quanto para o anterior, permitindo percorrimento em ambas direções e remoções eficientes nas extremidades. A implementação acompanha ponteiros para cabeça e cauda.【F:src/main/java/com/loiane/estruturadados/lista/dupla/ListaDuplamenteEncadeada.java†L1-L96】
+Listas duplamente encadeadas mantêm referências tanto para o próximo quanto para o anterior, permitindo percorrimento em ambas direções e remoções eficientes nas extremidades. A implementação acompanha ponteiros para cabeça e cauda.【F:src/main/java/com/lucas/estruturadados/lista/dupla/ListaDuplamenteEncadeada.java†L1-L96】
 
 ### Operações Disponíveis
 
@@ -248,7 +248,7 @@ flowchart TD
 
 ### Conceito e Características
 
-Pilha é uma estrutura LIFO (Last-In, First-Out). O topo é a única extremidade para inserção e remoção. Nesta implementação, um vetor dinâmico mantém os elementos, dobrando de tamanho quando necessário.【F:src/main/java/com/loiane/estruturadados/pilha/Pilha.java†L1-L71】
+Pilha é uma estrutura LIFO (Last-In, First-Out). O topo é a única extremidade para inserção e remoção. Nesta implementação, um vetor dinâmico mantém os elementos, dobrando de tamanho quando necessário.【F:src/main/java/com/lucas/estruturadados/pilha/Pilha.java†L1-L71】
 
 ### Operações Disponíveis
 
@@ -292,7 +292,7 @@ flowchart TD
 
 ### Conceito e Características
 
-A fila segue a disciplina FIFO (First-In, First-Out). É implementada com um vetor circular para evitar deslocamentos; os índices de início e fim são atualizados modularmente.【F:src/main/java/com/loiane/estruturadados/fila/Fila.java†L1-L86】
+A fila segue a disciplina FIFO (First-In, First-Out). É implementada com um vetor circular para evitar deslocamentos; os índices de início e fim são atualizados modularmente.【F:src/main/java/com/lucas/estruturadados/fila/Fila.java†L1-L86】
 
 ### Operações Disponíveis
 
@@ -339,7 +339,7 @@ flowchart TD
 
 ### Conceito e Características
 
-Uma fila de prioridade permite retirar sempre o maior (ou menor) elemento. A implementação usa um heap binário máximo armazenado em vetor, garantindo inserções e remoções em tempo O(log n).【F:src/main/java/com/loiane/estruturadados/heap/FilaPrioridade.java†L1-L88】
+Uma fila de prioridade permite retirar sempre o maior (ou menor) elemento. A implementação usa um heap binário máximo armazenado em vetor, garantindo inserções e remoções em tempo O(log n).【F:src/main/java/com/lucas/estruturadados/heap/FilaPrioridade.java†L1-L88】
 
 ### Operações Disponíveis
 
@@ -388,7 +388,7 @@ flowchart TD
 
 ### Conceito e Características
 
-A árvore binária de busca organiza elementos ordenáveis para permitir buscas, inserções e percursos eficientes. Todo nó armazena referências para filhos esquerdo/direito e preserva a ordem (`esquerda < nó < direita`).【F:src/main/java/com/loiane/estruturadados/arvore/ArvoreBinariaBusca.java†L1-L71】
+A árvore binária de busca organiza elementos ordenáveis para permitir buscas, inserções e percursos eficientes. Todo nó armazena referências para filhos esquerdo/direito e preserva a ordem (`esquerda < nó < direita`).【F:src/main/java/com/lucas/estruturadados/arvore/ArvoreBinariaBusca.java†L1-L71】
 
 ### Operações Disponíveis
 
@@ -448,7 +448,7 @@ flowchart TD
 
 ### Conceito e Características
 
-Tabelas hash associam chaves a valores usando uma função de espalhamento. As colisões são resolvidas por encadeamento separado (listas ligadas em cada balde). O redimensionamento dobra a quantidade de baldes quando o fator de carga ultrapassa 0,75.【F:src/main/java/com/loiane/estruturadados/hash/TabelaHash.java†L1-L103】
+Tabelas hash associam chaves a valores usando uma função de espalhamento. As colisões são resolvidas por encadeamento separado (listas ligadas em cada balde). O redimensionamento dobra a quantidade de baldes quando o fator de carga ultrapassa 0,75.【F:src/main/java/com/lucas/estruturadados/hash/TabelaHash.java†L1-L103】
 
 ### Operações Disponíveis
 
@@ -513,7 +513,7 @@ flowchart TD
 
 ### Conceito e Características
 
-Grafos modelam relações entre entidades (vértices). A representação por lista de adjacência armazena, para cada vértice, o conjunto de vizinhos conectados por arestas. Esta versão é não direcionada e utiliza `HashMap` e `HashSet` para garantir unicidade dos vértices.【F:src/main/java/com/loiane/estruturadados/grafo/GrafoListaAdjacencia.java†L1-L45】
+Grafos modelam relações entre entidades (vértices). A representação por lista de adjacência armazena, para cada vértice, o conjunto de vizinhos conectados por arestas. Esta versão é não direcionada e utiliza `HashMap` e `HashSet` para garantir unicidade dos vértices.【F:src/main/java/com/lucas/estruturadados/grafo/GrafoListaAdjacencia.java†L1-L45】
 
 ### Operações Disponíveis
 

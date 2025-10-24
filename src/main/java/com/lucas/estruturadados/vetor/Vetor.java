@@ -1,4 +1,4 @@
-package com.loiane.estruturadados.vetor;
+package com.lucas.estruturadados.vetor;
 
 public class Vetor {
     private String[] elementos;
